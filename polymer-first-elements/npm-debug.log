@@ -1,0 +1,164 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'polyserve' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.3
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'polyserve', null ]
+7 verbose cache add spec polyserve
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'polyserve',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'polyserve',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed polyserve@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for polyserve
+11 info addNameTag [ 'polyserve', 'latest' ]
+12 silly mapToRegistry name polyserve
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'polyserve',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'polyserve',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/polyserve
+17 verbose addNameTag registry:https://registry.npmjs.org/polyserve not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/polyserve
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 11:45:31 AM
+21 verbose request id 580c883497f1e33f
+22 verbose etag "EULDCX4GLF7ARJQQG1MTUWHBE"
+23 http request GET https://registry.npmjs.org/polyserve
+24 http 304 https://registry.npmjs.org/polyserve
+25 verbose headers { date: 'Wed, 13 Apr 2016 16:45:29 GMT',
+25 verbose headers   via: '1.1 varnish',
+25 verbose headers   'cache-control': 'max-age=300',
+25 verbose headers   etag: '"EULDCX4GLF7ARJQQG1MTUWHBE"',
+25 verbose headers   age: '0',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'x-served-by': 'cache-ord1739-ORD',
+25 verbose headers   'x-cache': 'MISS',
+25 verbose headers   'x-cache-hits': '0',
+25 verbose headers   'x-timer': 'S1460565929.544975,VS0,VE33',
+25 verbose headers   vary: 'Accept-Encoding' }
+26 silly get cb [ 304,
+26 silly get   { date: 'Wed, 13 Apr 2016 16:45:29 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     'cache-control': 'max-age=300',
+26 silly get     etag: '"EULDCX4GLF7ARJQQG1MTUWHBE"',
+26 silly get     age: '0',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-ord1739-ORD',
+26 silly get     'x-cache': 'MISS',
+26 silly get     'x-cache-hits': '0',
+26 silly get     'x-timer': 'S1460565929.544975,VS0,VE33',
+26 silly get     vary: 'Accept-Encoding' } ]
+27 verbose etag https://registry.npmjs.org/polyserve from cache
+28 verbose get saving polyserve to /Users/catiejo/.npm/registry.npmjs.org/polyserve/.cache.json
+29 verbose correctMkdir /Users/catiejo/.npm correctMkdir not in flight; initializing
+30 silly addNameTag next cb for polyserve with tag latest
+31 silly addNamed polyserve@0.7.1
+32 verbose addNamed "0.7.1" is a plain semver version for polyserve
+33 silly cache afterAdd polyserve@0.7.1
+34 verbose afterAdd /Users/catiejo/.npm/polyserve/0.7.1/package/package.json not in flight; writing
+35 verbose correctMkdir /Users/catiejo/.npm correctMkdir not in flight; initializing
+36 verbose afterAdd /Users/catiejo/.npm/polyserve/0.7.1/package/package.json written
+37 silly install resolved [ { name: 'polyserve',
+37 silly install resolved     version: '0.7.1',
+37 silly install resolved     description: 'A simple dev server for bower components',
+37 silly install resolved     license: 'BSD-3-Clause',
+37 silly install resolved     repository:
+37 silly install resolved      { type: 'git',
+37 silly install resolved        url: 'git+https://github.com/polymerlabs/polyserve.git' },
+37 silly install resolved     main: 'main.js',
+37 silly install resolved     bin: { polyserve: 'bin/polyserve' },
+37 silly install resolved     scripts: { start: './bin/polyserve' },
+37 silly install resolved     keywords: [ 'polymer', 'polyserve' ],
+37 silly install resolved     dependencies:
+37 silly install resolved      { express: '^4.8.5',
+37 silly install resolved        'find-port': '^1.0.1',
+37 silly install resolved        minimist: '^1.1.1',
+37 silly install resolved        opn: '^3.0.2',
+37 silly install resolved        resolve: '^1.0.0',
+37 silly install resolved        send: '^0.10.1' },
+37 silly install resolved     devDependencies: { typescript: '^1.8.0' },
+37 silly install resolved     gitHead: '7c9879fe77383d8cb8e1ee4a0803a9583be1dc2d',
+37 silly install resolved     bugs: { url: 'https://github.com/polymerlabs/polyserve/issues' },
+37 silly install resolved     homepage: 'https://github.com/polymerlabs/polyserve#readme',
+37 silly install resolved     _id: 'polyserve@0.7.1',
+37 silly install resolved     _shasum: 'e25499274074ac8fe1c43c17ef2f08a90e2d35a2',
+37 silly install resolved     _from: 'polyserve@latest',
+37 silly install resolved     _npmVersion: '3.3.6',
+37 silly install resolved     _nodeVersion: '5.0.0',
+37 silly install resolved     _npmUser: { name: 'justinfagnani', email: 'justin@fagnani.com' },
+37 silly install resolved     dist:
+37 silly install resolved      { shasum: 'e25499274074ac8fe1c43c17ef2f08a90e2d35a2',
+37 silly install resolved        tarball: 'https://registry.npmjs.org/polyserve/-/polyserve-0.7.1.tgz' },
+37 silly install resolved     maintainers: [ [Object] ],
+37 silly install resolved     _npmOperationalInternal:
+37 silly install resolved      { host: 'packages-5-east.internal.npmjs.com',
+37 silly install resolved        tmp: 'tmp/polyserve-0.7.1.tgz_1455664919752_0.4388319575227797' },
+37 silly install resolved     directories: {},
+37 silly install resolved     _resolved: 'https://registry.npmjs.org/polyserve/-/polyserve-0.7.1.tgz',
+37 silly install resolved     readme: 'ERROR: No README data found!' } ]
+38 info install polyserve@0.7.1 into /usr/local/lib
+39 info installOne polyserve@0.7.1
+40 verbose installOne of polyserve to /usr/local/lib not in flight; installing
+41 verbose correctMkdir /Users/catiejo/.npm/_locks correctMkdir not in flight; initializing
+42 verbose lock using /Users/catiejo/.npm/_locks/polyserve-ad69e3ede304caf9.lock for /usr/local/lib/node_modules/polyserve
+43 silly install write writing polyserve 0.7.1 to /usr/local/lib/node_modules/polyserve
+44 verbose unbuild lib/node_modules/polyserve
+45 silly gentlyRm /usr/local/lib/node_modules/polyserve is being purged from base /usr/local
+46 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/polyserve
+47 verbose tar unpack /Users/catiejo/.npm/polyserve/0.7.1/package.tgz
+48 verbose tar unpacking to /usr/local/lib/node_modules/polyserve
+49 silly gentlyRm /usr/local/lib/node_modules/polyserve is being purged
+50 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/polyserve
+51 silly gunzTarPerm modes [ '755', '644' ]
+52 error tar.unpack untar error /Users/catiejo/.npm/polyserve/0.7.1/package.tgz
+53 verbose unlock done using /Users/catiejo/.npm/_locks/polyserve-ad69e3ede304caf9.lock for /usr/local/lib/node_modules/polyserve
+54 verbose fstream_path /usr/local/lib/node_modules/polyserve
+55 verbose fstream_type Directory
+56 verbose fstream_class DirWriter
+57 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/polyserve'
+57 verbose stack     at Error (native)
+58 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+58 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+58 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+59 verbose cwd /Users/catiejo/Code/polymer-first-elements
+60 error Darwin 15.3.0
+61 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "polyserve"
+62 error node v4.4.3
+63 error npm  v2.15.1
+64 error path /usr/local/lib/node_modules/polyserve
+65 error code EACCES
+66 error errno -13
+67 error syscall mkdir
+68 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/polyserve'
+68 error     at Error (native)
+68 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/polyserve']
+68 error   errno: -13,
+68 error   code: 'EACCES',
+68 error   syscall: 'mkdir',
+68 error   path: '/usr/local/lib/node_modules/polyserve',
+68 error   fstream_type: 'Directory',
+68 error   fstream_path: '/usr/local/lib/node_modules/polyserve',
+68 error   fstream_class: 'DirWriter',
+68 error   fstream_stack:
+68 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+68 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+68 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+69 error Please try running this command again as root/Administrator.
+70 verbose exit [ -13, true ]
+71 verbose unbuild lib/node_modules/polyserve
+72 silly gentlyRm /usr/local/lib/node_modules/polyserve is being purged from base /usr/local
+73 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/polyserve
